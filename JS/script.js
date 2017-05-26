@@ -46,8 +46,13 @@ var str = 'a car, a man, a maraca';
 //    console.log(s)
 //    return s==s.split('').reverse().join('') //40
 //}
+//function isPalindrome(s) {
+//    s=s.replace(/\W/g,'').toUpperCase() //36  
+//    return s==s.split('').reverse().join('') //40
+//}
 function isPalindrome(s) {
-    s=s.replace(/\W/g,'') //36  
+    s=s.replace(/\W/g,'').toUpperCase() //36  
+    console.log(s)
     return s==s.split('').reverse().join('') //40
 }
 console.log(isPalindrome(str));

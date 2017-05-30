@@ -1,5 +1,5 @@
 'use strict';
-var str = 'a car, a man, a maraca';
+var str = 'A car, a man, a maraca';
 
 // ВАРИАНТ 1
 
@@ -29,5 +29,9 @@ function isPalindrome(s) {
     s=s.replace(/\W/g,'').toUpperCase() //36  
     return s==s.split('').reverse().join('') //40
 }
+
+//function isPalindrome(s) {
+//    var a=s.toLowerCase().match(/\w/g);return a.join()==a.reverse().join()
+//}
 
 console.log(isPalindrome(str));
